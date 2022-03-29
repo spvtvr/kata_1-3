@@ -1,13 +1,10 @@
 /*------------- Базовые настройки CSS -------------*/
 html {
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 *, *::after, *::before {
     box-sizing: inherit;
 }
-
-body::-webkit-scrollbar { width: 0;}
 
 ul[class],
 ol[class],
@@ -203,11 +200,11 @@ header {
 .categories {
     display: flex;
     padding: 24px 0;
+    overflow-x: scroll;
 }
 
 .categories__list {
     display: flex;
-    overflow: scroll;
     max-height: 40px;
 }
 
