@@ -201,6 +201,7 @@ header {
     display: flex;
     padding: 24px 0;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .categories__list {
@@ -371,6 +372,7 @@ header {
 
     .categories {
         padding: 8px 0;
+        overflow-x: hidden;
     }
 
     .categories__list {
