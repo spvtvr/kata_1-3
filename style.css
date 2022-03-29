@@ -7,8 +7,11 @@ html {
     box-sizing: inherit;
 }
 
+body::-webkit-scrollbar { width: 0;}
+
 ul[class],
-ol[class] {
+ol[class],
+menu {
   padding: 0;
 }
 
@@ -204,7 +207,7 @@ header {
 
 .categories__list {
     display: flex;
-    overflow-y: scroll;
+    overflow: scroll;
     max-height: 40px;
 }
 
