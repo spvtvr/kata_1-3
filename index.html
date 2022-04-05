@@ -1,135 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPS Kata Academy</title>
+    <title>Hide Menu</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-    <div class="wrapper">
-    <header class="header">
-        <div class="header__container _container">
-            <div class="header__block--left">
-                <menu class="header__menu menu">
-                    <a href="#" class="menu__button">
-                        <img src="img/burger.svg" alt="Меню">
-                    </a>
-                </menu>
-                <div class="header__divider--lg"></div>
-                <div class="header__logo">
-                    <a href="#" class="header__logo--image">
-                        <img src="img/logo.svg" alt="Логотип">
+    <nav class="nav">
+        <div class="nav__container _container">
+            <div class="nav__header nav-header">
+                <div class="nav-header__back-button back-button">
+                    <a href="#" class="back-button__link">
+                        <img src="img/burger-back.svg" alt="Назад" class="back-button__link--image">
                     </a>
                 </div>
-                <div class="header__divider--sm"></div>
-            </div>
-            <div class="header__block--right">
-                <div class="header__block--md md-block">
-                    <div class="md-block__call">
-                        <a href="#" class="md-block__call--link">
-                            <img src="img/call.svg" alt="Заказать звонок">
-                        </a>
-                    </div>
-                    <div class="md-block__chat">
-                        <a href="#" class="md-block__chat--link">
-                            <img src="img/chat.svg" alt="Чат-поддержка">
-                        </a>
-                    </div>
-                    <div class="md-block__profile">
-                        <a href="#" class="md-block__profile--link">
-                            <img src="img/profile.svg" alt="Личный профиль">
-                        </a>
-                    </div>
+                <div class="nav-header__logo nav-logo">
+                    <a href="#" class="nav-logo__link">
+                        <img src="img/logo.svg" alt="Главная" class="nav-logo__link--image">
+                    </a>
                 </div>
-                <div class="header__services">
-                    <div class="header__divider--lg"></div>
-                    <div class="header__button repair-button">
-                        <a href="#" class="repair-button--image">
-                            <img src="img/repair.svg" alt="Оставить заявку">
-                        </a>
-                    </div>
-                    <div class="header__button checkstatus-button">
-                        <a href="#" class="checkstatus-button--image">
-                            <img src="img/checkstatus.svg" alt="Статус ремонта">
-                        </a>
-                    </div>
+                <div class="nav-header__search-button search-button">
+                    <a href="#" class="search-button__link">
+                        <img src="img/search.svg" alt="Поиск" class="search-button__link--image">
+                    </a>
                 </div>
             </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="main__container _container">
-            <div class="main__highlight"></div>
-            <div class="main__title">
-                <h1 class="main__title--text">Услуги и сервисы</h1>
-                <div class="main__buttons--lg button">
-                    <div class="button__repair">
-                        <a href="#" class="button__repair--link">
-                            <div class="button__repair--text"><p>Оставить заявку</p></div>
-                            <div class="button__repair--image">
-                                <img src="img/repair.svg" alt="Оставить заявку">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="button__checkstatus">
-                        <a href="#" class="button__checkstatus--link">
-                            <div class="button__checkstatus--text"><p>Статус ремонта</p></div>
-                            <div class="button__checkstatus--image">
-                                <img src="img/checkstatus.svg" alt="Статус ремонта">
-                            </div>
-                        </a>
-                        
-                    </div>
-                </div>
-            </div>
-            <nav class="main__categories categories">
-                <ul class="categories__list">
-                    <li class="categories__item categories__item--active">
-                        <a href="#" class="categories__link">Ремонтируемые устройства</a>
-                    </li>
-                    <li class="categories__item">
-                        <a href="#" class="categories__link">Дополнительные услуги</a>
-                    </li>
-                    <li class="categories__item">
-                        <a href="#" class="categories__link">Цены на услуги</a>
-                    </li>
-                    <li class="categories__item">
-                        <a href="#" class="categories__link">Адреса сервисных центров</a>
-                    </li>
-                    <li class="categories__item">
-                        <a href="#" class="categories__link">Специальные цены</a>
-                    </li>
-                    <li class="categories__item">
-                        <a href="#" class="categories__link">Отзывы</a>
-                    </li>
+            <div class="nav__main nav-main">
+                <ul class="nav-main__pages">
+                    <li class="nav-main__pages--link nav-link nav-link--active">
+                        <a href="#">Ремонт техники</a></li>
+                    <li class="nav-main__pages--link nav-link">
+                        <a href="#">Услуги и сервисы</a></li>
+                    <li class="nav-main__pages--link nav-link">
+                        <a href="#">Корпоративным клиентам</a></li>
+                    <li class="nav-main__pages--link">
+                        <a href="#">Продавцам техники</a></li>
+                    <li class="nav-main__pages--link nav-link">
+                        <a href="#">Партнерам</a></li>
+                    <li class="nav-main__pages--link nav-link">
+                        <a href="#">Производителям</a></li>
+                    <li class="nav-main__pages--link nav-link">
+                        <a href="#">Наши сервисные центры</a></li>
+                    <li class="nav-main__pages--link nav-link">
+                        <a href="#">Контакты</a></li>
                 </ul>
-            </nav>
-            <section class="main__blog">
-                <article class="main__text">
-                    <div class="main__paragraph">
-                        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                        <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                    </div>
-                    <div class="main__read-more read-more">
-                        <div class="read-more__icon">
-                            <img src="img/icon.svg" alt="Читать далее">
-                        </div>
-                        <div class="read-more__link">
-                            <a href="#">Читать далее</a>
-                        </div>
-                    </div>
-                </article>
-                <div class="main__image">
-                    <img src="img/blog-image-sm.jpg" alt="Изображение с лого CPS">
+            </div>
+            <div class="nav__footer nav-footer">
+                <div class="nav-footer__buttons">
+                    <a href="#" class="nav-footer__buttons--link">
+                        <img src="img/call.svg" alt="Позвонить нам"></a>
+                    <a href="#" class="nav-footer__buttons--link">
+                        <img src="img/chat.svg" alt="Написать нам"></a>
+                    <a href="#" class="nav-footer__buttons--link">
+                        <img src="img/profile.svg" alt="Личный профиль"></a>
                 </div>
-            </section>
+                <div class="nav-footer__contacts">
+                    <div class="nav-footer__contacts--link email-link">
+                        <a href="#">mail@cps.com</a>
+                    </div>
+                    <div class="nav-footer__contacts--link number-link">
+                        <a href="#">8 800 890 8900</a>
+                    </div>
+                </div>
+                <div class="nav-footer__lang">
+                    <a href="#" class="nav-footer__lang--item nav-footer__lang--item--active">RU</a>
+                    <a href="#" class="nav-footer__lang--item">EN</a>
+                    <a href="#" class="nav-footer__lang--item">CH</a>
+                </div>
+            </div>
         </div>
-    </main>
-    </div>
+    </nav>
 </body>
 </html>
