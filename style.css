@@ -271,3 +271,9 @@ details {
     }
 
 }
+
+@media (min-width: 1264px) {
+    .brand-repair__list {
+        max-width: 1263px;
+    }
+}
