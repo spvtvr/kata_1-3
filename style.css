@@ -237,7 +237,7 @@ details {
 
     details summary::before {
         position: absolute;
-        content: url('/img/show-all-icon.svg');
+        content: url('img/show-all-icon.svg');
         transform: translate(-30px);
     }
 
