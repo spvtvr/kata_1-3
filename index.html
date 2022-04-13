@@ -5,131 +5,333 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPS Kata Academy</title>
+    <title>1-5 Swiper</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-    <div class="wrapper">
-    <header class="header">
-        <div class="header__container _container">
-            <div class="header__block--left">
-                <menu class="header__menu menu">
-                    <a href="#" class="menu__button">
-                        <img src="img/burger.svg" alt="Меню">
-                    </a>
-                </menu>
-                <div class="header__divider--lg"></div>
-                <div class="header__logo">
-                    <a href="#" class="header__logo--image">
-                        <img src="img/logo.svg" alt="Логотип">
-                    </a>
-                </div>
-                <div class="header__divider--sm"></div>
-            </div>
-            <div class="header__block--right">
-                <div class="header__block--md md-block">
-                    <div class="md-block__call">
-                        <a href="#" class="md-block__call--link">
-                            <img src="img/call.svg" alt="Заказать звонок">
-                        </a>
-                    </div>
-                    <div class="md-block__chat">
-                        <a href="#" class="md-block__chat--link">
-                            <img src="img/chat.svg" alt="Чат-поддержка">
-                        </a>
-                    </div>
-                    <div class="md-block__profile">
-                        <a href="#" class="md-block__profile--link">
-                            <img src="img/profile.svg" alt="Личный профиль">
-                        </a>
-                    </div>
-                </div>
-                <div class="header__services">
-                    <div class="header__divider--lg"></div>
-                    <div class="header__button repair-button">
-                        <a href="#" class="repair-button--image">
-                            <img src="img/repair.svg" alt="Оставить заявку">
-                        </a>
-                    </div>
-                    <div class="header__button checkstatus-button">
-                        <a href="#" class="checkstatus-button--image">
-                            <img src="img/checkstatus.svg" alt="Статус ремонта">
-                        </a>
-                    </div>
-                </div>
+    <section class="brand-repair wrapper">
+        <div class="brand-repair__title">
+            <div class="brand-repair__inner _inner">
+                <h2 class="brand-repair__title--text">
+                    Ремонт техники различных брендов
+                </h2>
             </div>
         </div>
-    </header>
-    <main class="main">
-        <div class="main__container _container">
-            <div class="main__highlight"></div>
-            <div class="main__title">
-                <h1 class="main__title--text">Услуги и сервисы</h1>
-                <div class="main__buttons--lg button">
-                    <div class="button__repair">
-                        <a href="#" class="button__repair--link">
-                            <div class="button__repair--text"><p>Оставить заявку</p></div>
-                            <div class="button__repair--image">
-                                <img src="img/repair.svg" alt="Оставить заявку">
+        <div class="brand-repair__list _inner">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item item">
+                            <div class="swiper-slide__item--inner item-inner">
+                                <div class="swiper-slide__item--logo item-logo">
+                                    <img src="img/lenovo-logo.svg" alt="Lenovo">
+                                </div>
+                                <div class="swiper-slide__item--button item-button">
+                                    <a href="#" class="swiper-button__link item-link">
+                                        <img src="img/go.svg" alt="Перейти">
+                                    </a>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="button__checkstatus">
-                        <a href="#" class="button__checkstatus--link">
-                            <div class="button__checkstatus--text"><p>Статус ремонта</p></div>
-                            <div class="button__checkstatus--image">
-                                <img src="img/checkstatus.svg" alt="Статус ремонта">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item item">
+                            <div class="swiper-slide__item--inner item-inner">
+                                <div class="swiper-slide__item--logo item-logo">
+                                    <img src="img/samsung-logo.svg" alt="Samsung">
+                                </div>
+                                <div class="swiper-slide__item--button item-button">
+                                    <a href="#" class="swiper-button__link item-link">
+                                        <img src="img/go.svg" alt="Перейти">
+                                    </a>
+                                </div>
                             </div>
-                        </a>
-                        
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item item">
+                            <div class="swiper-slide__item--inner item-inner">
+                                <div class="swiper-slide__item--logo item-logo">
+                                    <img src="img/apple-logo.svg" alt="Apple">
+                                </div>
+                                <div class="swiper-slide__item--button item-button">
+                                    <a href="#" class="swiper-button__link item-link">
+                                        <img src="img/go.svg" alt="Перейти">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item item">
+                            <div class="swiper-slide__item--inner item-inner">
+                                <div class="swiper-slide__item--logo item-logo">
+                                    <img src="img/bosch-logo.svg" alt="BOSCH">
+                                </div>
+                                <div class="swiper-slide__item--button item-button">
+                                    <a href="#" class="swiper-button__link item-link">
+                                        <img src="img/go.svg" alt="Перейти">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item item">
+                            <div class="swiper-slide__item--inner item-inner">
+                                <div class="swiper-slide__item--logo item-logo">
+                                    <img src="img/viewsonic-logo.svg" alt="ViewSonic">
+                                </div>
+                                <div class="swiper-slide__item--button item-button">
+                                    <a href="#" class="swiper-button__link item-link">
+                                        <img src="img/go.svg" alt="Перейти">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item item">
+                            <div class="swiper-slide__item--inner item-inner">
+                                <div class="swiper-slide__item--logo item-logo">
+                                    <img src="img/sony-logo.svg" alt="Sony">
+                                </div>
+                                <div class="swiper-slide__item--button item-button">
+                                    <a href="#" class="swiper-button__link item-link">
+                                        <img src="img/go.svg" alt="Перейти">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item item">
+                            <div class="swiper-slide__item--inner item-inner">
+                                <div class="swiper-slide__item--logo item-logo">
+                                    <img src="img/hp-logo.svg" alt="HP">
+                                </div>
+                                <div class="swiper-slide__item--button item-button">
+                                    <a href="#" class="swiper-button__link item-link">
+                                        <img src="img/go.svg" alt="Перейти">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item item">
+                            <div class="swiper-slide__item--inner item-inner">
+                                <div class="swiper-slide__item--logo item-logo">
+                                    <img src="img/acer-logo.svg" alt="Acer">
+                                </div>
+                                <div class="swiper-slide__item--button item-button">
+                                    <a href="#" class="swiper-button__link item-link">
+                                        <img src="img/go.svg" alt="Перейти">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item item">
+                            <div class="swiper-slide__item--inner item-inner">
+                                <div class="swiper-slide__item--logo item-logo">
+                                    <img src="img/apple-logo.svg" alt="Apple">
+                                </div>
+                                <div class="swiper-slide__item--button item-button">
+                                    <a href="#" class="swiper-button__link item-link">
+                                        <img src="img/go.svg" alt="Перейти">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item item">
+                            <div class="swiper-slide__item--inner item-inner">
+                                <div class="swiper-slide__item--logo item-logo">
+                                    <img src="img/bosch-logo.svg" alt="BOSCH">
+                                </div>
+                                <div class="swiper-slide__item--button item-button">
+                                    <a href="#" class="swiper-button__link item-link">
+                                        <img src="img/go.svg" alt="Перейти">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="brand-repair__list--lg brand-list-lg">
+                <div class="brand-list-lg__item item">
+                    <div class="brand-list-lg__item--inner item-inner">
+                        <div class="item-logo">
+                            <img src="img/lenovo-logo.svg" alt="Lenovo">
+                        </div>
+                        <div class="brand-list-lg__item--button item-button">
+                            <a href="#" class="brand-list-lg__item--link item-link">
+                                <img src="img/go.svg" alt="Перейти">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-list-lg__item item">
+                    <div class="brand-list-lg__item--inner item-inner">
+                        <div class="item-logo">
+                            <img src="img/samsung-logo.svg" alt="Samsung">
+                        </div>
+                        <div class="brand-list-lg__item--button item-button">
+                            <a href="#" class="brand-list-lg__item--link item-link">
+                                <img src="img/go.svg" alt="Перейти">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-list-lg__item item">
+                    <div class="brand-list-lg__item--inner item-inner">
+                        <div class="item-logo">
+                            <img src="img/bosch-logo.svg" alt="BOSCH">
+                        </div>
+                        <div class="brand-list-lg__item--button item-button">
+                            <a href="#" class="brand-list-lg__item--link item-link">
+                                <img src="img/go.svg" alt="Перейти">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-list-lg__item item">
+                    <div class="brand-list-lg__item--inner item-inner">
+                        <div class="item-logo">
+                            <img src="img/viewsonic-logo.svg" alt="ViewSonic">
+                        </div>
+                        <div class="brand-list-lg__item--button item-button">
+                            <a href="#" class="brand-list-lg__item--link item-link">
+                                <img src="img/go.svg" alt="Перейти">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-list-lg__item item">
+                    <div class="brand-list-lg__item--inner item-inner">
+                        <div class="item-logo">
+                            <img src="img/sony-logo.svg" alt="Sony">
+                        </div>
+                        <div class="brand-list-lg__item--button item-button">
+                            <a href="#" class="brand-list-lg__item--link item-link">
+                                <img src="img/go.svg" alt="Перейти">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-list-lg__item item">
+                    <div class="brand-list-lg__item--inner item-inner">
+                        <div class="item-logo">
+                            <img src="img/bosch-logo.svg" alt="BOSCH">
+                        </div>
+                        <div class="brand-list-lg__item--button item-button">
+                            <a href="#" class="brand-list-lg__item--link item-link">
+                                <img src="img/go.svg" alt="Перейти">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-list-lg__item item item__hidden">
+                    <div class="brand-list-lg__item--inner item-inner">
+                        <div class="item-logo">
+                            <img src="img/hp-logo.svg" alt="HP">
+                        </div>
+                        <div class="brand-list-lg__item--button item-button">
+                            <a href="#" class="brand-list-lg__item--link item-link">
+                                <img src="img/go.svg" alt="Перейти">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-list-lg__item item item__hidden">
+                    <div class="brand-list-lg__item--inner item-inner">
+                        <div class="item-logo">
+                            <img src="img/acer-logo.svg" alt="Acer">
+                        </div>
+                        <div class="brand-list-lg__item--button item-button">
+                            <a href="#" class="brand-list-lg__item--link item-link">
+                                <img src="img/go.svg" alt="Перейти">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <nav class="main__categories categories">
-                <ul class="categories__list">
-                    <li class="categories__item categories__item--active">
-                        <a href="#" class="categories__link">Ремонтируемые устройства</a>
-                    </li>
-                    <li class="categories__item">
-                        <a href="#" class="categories__link">Дополнительные услуги</a>
-                    </li>
-                    <li class="categories__item">
-                        <a href="#" class="categories__link">Цены на услуги</a>
-                    </li>
-                    <li class="categories__item">
-                        <a href="#" class="categories__link">Адреса сервисных центров</a>
-                    </li>
-                    <li class="categories__item">
-                        <a href="#" class="categories__link">Специальные цены</a>
-                    </li>
-                    <li class="categories__item">
-                        <a href="#" class="categories__link">Отзывы</a>
-                    </li>
-                </ul>
-            </nav>
-            <section class="main__blog">
-                <article class="main__text">
-                    <div class="main__paragraph">
-                        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                        <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                    </div>
-                    <div class="main__read-more read-more">
-                        <div class="read-more__icon">
-                            <img src="img/icon.svg" alt="Читать далее">
+            <details class="details">
+                <summary data-open="Скрыть" data-close="Показать все"></summary>
+                <div class="details__flex">
+                <div class="brand-list-lg__item item item__visible">
+                    <div class="brand-list-lg__item--inner item-inner">
+                        <div class="item-logo">
+                            <img src="img/hp-logo.svg" alt="HP">
                         </div>
-                        <div class="read-more__link">
-                            <a href="#">Читать далее</a>
+                        <div class="brand-list-lg__item--button item-button">
+                            <a href="#" class="brand-list-lg__item--link item-link">
+                                <img src="img/go.svg" alt="Перейти">
+                            </a>
                         </div>
                     </div>
-                </article>
-                <div class="main__image">
-                    <img src="img/blog-image-sm.jpg" alt="Изображение с лого CPS">
                 </div>
-            </section>
+                <div class="brand-list-lg__item item item__visible">
+                    <div class="brand-list-lg__item--inner item-inner">
+                        <div class="item-logo">
+                            <img src="img/acer-logo.svg" alt="Acer">
+                        </div>
+                        <div class="brand-list-lg__item--button item-button">
+                            <a href="#" class="brand-list-lg__item--link item-link">
+                                <img src="img/go.svg" alt="Перейти">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-list-lg__item item">
+                    <div class="brand-list-lg__item--inner item-inner">
+                        <div class="item-logo">
+                            <img src="img/apple-logo.svg" alt="Apple">
+                        </div>
+                        <div class="brand-list-lg__item--button item-button">
+                            <a href="#" class="brand-list-lg__item--link item-link">
+                                <img src="img/go.svg" alt="Перейти">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-list-lg__item item">
+                    <div class="brand-list-lg__item--inner item-inner">
+                        <div class="item-logo">
+                            <img src="img/bosch-logo.svg" alt="BOSCH">
+                        </div>
+                        <div class="brand-list-lg__item--button item-button">
+                            <a href="#" class="brand-list-lg__item--link item-link">
+                                <img src="img/go.svg" alt="Перейти">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-list-lg__item item">
+                    <div class="brand-list-lg__item--inner item-inner">
+                        <div class="item-logo">
+                            <img src="img/sony-logo.svg" alt="Sony">
+                        </div>
+                        <div class="brand-list-lg__item--button item-button">
+                            <a href="#" class="brand-list-lg__item--link item-link">
+                                <img src="img/go.svg" alt="Перейти">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </details>
         </div>
-    </main>
-    </div>
+    </section>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
